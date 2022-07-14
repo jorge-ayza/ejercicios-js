@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas</title>
+    <style>
+        body{font-family: Sans, sans-serif;}
+        #tabs-container{
+            width: 500px;
+            margin: 100px auto;
+            border: solid 1px black;
+        }
+        .tabs{
+            display: flex;
+            background-color: #ccc;
+        }
+        .tab,
+        .tab button{
+            width: 100%;
+        }
+        .tab button{
+            background-color: transparent;
+            border: none;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        .content{
+            display: none;
+            padding: 5px;
+        }
+        .tab.active-tab{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs-container">
+        <div class="tabs">
+            <div class="tab"><button>Frase 1</button></div>
+            <div class="tab"><button>Frase 2</button></div>
+            <div class="tab"><button>Frase 3</button></div>
+        </div>
+
+        <div class="contents">
+            <div class="content">
+                Nuestras virtudes y nuestros defectos son inseparables, como la fuerza y la materia. Cuando se separan, el hombre ya no existe.
+            </div>
+            <div class="content">
+                Si quieres encontrar los secretos del universo, piensa en términos de energía, frecuencia y vibración.
+            </div>
+            <div class="content">
+                Me acreditan ser uno de los trabajadores más duros, y quizás lo soy, si el pensamiento es equivalente a la labor, ya que he dedicado a ello casi todas mis horas despierto. Pero si el trabajo es interpretado como la ejecución definida en un tiempo específico, según reglas rígidas, entonces podría ser que yo soy el peor de los holgazanes.
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
